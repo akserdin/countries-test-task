@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.5",
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "resolve-url-loader": "^3.1.2",
+        "vue-loader": "^15.9.6"
+    },
+    "dependencies": {
+        "@innologica/vue-dropdown-menu": "^0.1.4",
+        "bootstrap": "^4.6.0",
+        "node-sass": "^5.0.0",
+        "sass": "^1.32.10",
+        "sass-loader": "^11.0.1",
+        "vue": "^2.6.12",
+        "vue-template-compiler": "^2.6.12"
+    }
+}
