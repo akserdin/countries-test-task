@@ -37,6 +37,7 @@
   to install dependencies
 - Copy .env.example file as .env and edit your credentials if needed
 - Run `./vendor/bin/sail up -d`
+- Run `./vendor/bin/sail artisan migrate`
 - Run `./vendor/bin/sail npm install` to install npm packages
 - Run `./vendor/bin/sail npm run prod` to compile scripts
 
