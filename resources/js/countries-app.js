@@ -132,7 +132,13 @@ new Vue({
 
             CountryRequestService.download(format)
                 .then(function(res) {
-                    vm.forceFileDownload(res.data, `countries.${format}`);
+                    let content = res.data;
+
+                    if (format === 'json') {
+                        content = JSON.stringify(content);
+                    }
+
+                    vm.forceFileDownload(content, `countries.${format}`);
                 })
                 .catch(vm.handleError);
         }
